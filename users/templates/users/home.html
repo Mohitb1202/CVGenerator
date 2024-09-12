@@ -1,0 +1,30 @@
+{% extends 'users/base.html' %}
+{% block body %}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <div class="card">
+                <div class="card-header text-white bg-primary">
+                    <div class="card-title">
+                        <h5>Welcome to CV Generator App</h5>
+
+                    </div>
+                </div>
+                <div class="card-body">
+                    <label>The CV that gets the job.. done</label>
+
+                </div>
+                <div class="card-body">
+                    <h5>Please Register</h5>
+                    <p>Already Registered? <a href="{% url 'login' %}">Login</a></p>
+
+
+                    <a href="{% url 'register' %}" class="btn btn-primary">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
